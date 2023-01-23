@@ -1,0 +1,1 @@
+web: gunicorn Best_Deal.wsgi

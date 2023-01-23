@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{%load static%}
+	<meta charset="utf-8">
+	<title>Best deal</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/css/opensans-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'deals/css/style.css' %}"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>01</span></p>
+			            	<span class="step-text">Find a Deal !</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Find a Deal !</h3>
+									<p>
+										Please enter the  informations about the package you would like to have  </p>
+								{% if messages %}
+									{% for message in messages %}
+									<div class="text-center"><strong style="color:'red'; font-style:'italic' ">{{message}}</strong></div>
+									{% endfor %}
+									{% endif %}
+
+								</div>
+								<br>
+								<form method="POST">
+									{% csrf_token %}
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Your price</legend>
+<!--											<input type="text" class="form-control" id="first-name" name="first-name" placeholder="Enter your price" required>-->
+<!--										-->
+										{{form.price}}
+										</fieldset>
+									</div>
+									
+								</div>
+							
+								<br>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label class="special-label">My priorities:</label>
+                                        <div >
+											<div>
+											<legend>sms</legend>
+											{{form.sms}}
+										</div>
+										<div>
+											<legend>call</legend>
+											{{form.call}}
+										</div>
+										<div>
+											<legend>data</legend>
+											{{form.data}}
+										</div>
+										</div>
+
+
+									</div>
+								</div>
+								
+								<br>
+
+								<div class="form-row">
+									<div class="form-holder">
+										
+											
+											<label class="special-label">Duration (in days):</label>
+<!--											<select name="sms" id="month" class="days" >-->
+<!--												<option value="1" >1</option>-->
+<!--											-->
+<!--												<option value="3">3</option>-->
+<!--												<option value="3">7</option>-->
+<!--												<option value="30">30</option>-->
+<!--												-->
+<!--											</select>-->
+										
+										{{form.days}}
+									</div>
+								
+								</div>
+								
+
+								
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+									
+
+										<br>
+										<button type="submit" class="btn-submit" style="background-color: #4fab40;color: white;" >submit</button>
+
+
+
+
+									</div>
+								</div>
+									</form>
+							</div>
+			            </section>
+					
+						<!-- SECTION 4 -->
+			            <h2>
+							<a href="{% url 'list' %}">
+			            	<p class="step-icon2"><span>02</span></p>
+			            	<span class="step-text2"><h1>List of  Packages</h1></span>
+						   </a>
+			            </h2>
+			            <section>
+			                
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+							<a href="{% url 'about' %}">
+								<p class="step-icon1"><span>03</span></p>
+								<span class="step-text1"><h1>About</h1></span>
+							</a>
+								
+					    </h2>
+			            <section>
+			                
+								
+							
+			            </section>
+						
+		        	</div>
+		        </form>
+				<div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'deals/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'deals/js/jquery.steps.js' %}"></script>
+	<script src="{% static 'deals/js/main.js' %}"></script>
+</body>
+</html>

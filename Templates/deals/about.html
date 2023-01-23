@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+		{%load static%}
+	<meta charset="utf-8">
+	<title>Best deal</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/css/opensans-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'deals/css/style.css' %}"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>03</span></p>
+			            	<span class="step-text">About</span>
+			            </h2>
+	            <section>
+
+			                <div class="inner">
+								<div class="breadcrumb-div">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"> <a  href="{% url 'home' %}">Find a Deal !</a></li>
+                                        <li class="breadcrumb-item"> <a  href="{% url 'list' %}">List of  Packages</a></li>
+
+                                    </ol>
+                                </div>
+
+			                	<div class="wizard-header">
+									<h3 class="heading">About Us</h3>
+									<p>We are students of IUSJC</p>
+								</div>
+								<br>
+								<div class="form-row">
+			                		<div class="form-holder form-holder-2">
+			                			<input type="radio" class="radio" name="radio1" id="plan-1" value="plan-1">
+			                			<label class="plan-icon plan-1-label" for="plan-1"  >
+		                					<img src="{% static 'deals/assets/images/form-v1-icon-2.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Nounamo Djimeu Estrella</span>
+		                					
+		                				</div>
+			                			<input type="radio" class="radio" name="radio1" id="plan-2" value="plan-2">
+			                			<label class="plan-icon plan-2-label" for="plan-2">
+			                					<img src="{% static 'deals/assets/images/form-v1-icon-2.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Siewe Stephanie Linda</span>
+		                				
+		                				</div>
+										<input type="radio" class="radio" name="radio1" id="plan-3" value="plan-3" checked>
+										<label class="plan-icon plan-3-label" for="plan-3">
+		                					<img src="{% static 'deals/assets/images/form-v1-icon-3.png' %}" alt="pay-2">
+										</label>
+										<div class="plan-total">
+		                					<span class="plan-title">Socpa Linda</span>
+		                					
+		                				</div>
+			                		</div>
+			                	</div>
+							</div>
+			            </section>
+						
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+
+		<script src="{% static 'deals/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'deals/js/jquery.steps.js' %}"></script>
+	<script src="{% static 'deals/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

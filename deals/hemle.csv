@@ -1,0 +1,26 @@
+﻿Nom;SMS;Appels;Data(Mo);Validité;prix;
+Hernle Jour 99;0;750;0;1;99;
+Hemle Jour 149;0;1460;0;1;149;
+Hemle Jour 199;0;1950;0;1;199;
+Hemle Jour 249;50;3500;0;1;99;
+Hemle Semaine 499;0;3800;0;7;499;
+Hemle Semaine 999;0;7950;0;7;999;
+Hemle Semaine 1500;50;12200;0;7;1500;
+Hemle Mois 2999;0;23390;0;30;2999;
+Hernle Net 3J;0;0;160;3;160;
+Hennie Net 599;0;0;660;30;599;
+Hernle Net 849;0;0;1000;30;1500;
+Hervole Net 949;0;0;1770;30;949;
+Hemle Appels 100;20;300;0;1;100;
+Hemle Appels J 250;20;750;0;1;250;
+Hemle Appels S 300;30;900;0;7;300;
+Hemle Appels M 600;50;1800;0;30;600;
+Hemle Appels M 26k;500;96000;0;30;26000;
+Hemle Illimité J;150;0;0;1;20;
+Hemle Illimité M;9000;0;0;30;500;
+Hemle Comp S 1000;100;3000;75;7;1000;
+Hemle comp S 2500;100;8500;250;7;1500;
+Hemle Comp M 3000;250;9000;250;30;3000;
+Hemle Comp M 5000;500;17000;500;30;5000;
+Hemle comp M 10000;500;35000;1000;30;10000;
+

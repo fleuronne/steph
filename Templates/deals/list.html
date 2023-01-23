@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+		{%load static%}
+	<meta charset="utf-8">
+	<title>Best deal</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/css/opensans-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'deals/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'deals/css/style.css' %}"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total">	
+						<!-- SECTION 4 -->
+			            <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">All deals</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+                                <div class="breadcrumb-div">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"> <a href="{% url 'home' %}">Find a Deal !</a></li>
+                                        <li class="breadcrumb-item"> <a href="{% url 'about' %}">About</a></li>
+                                      
+                                    </ol>
+                                </div>   
+			                	<div class="wizard-header">
+									<h3 class="heading">List of  Packages</h3>
+									<p>All the deals of your operators</p>
+								</div>
+								
+								
+
+								<div class="form-row">
+									<div class="form-holder form-holder-1">
+
+										<p>Chez Mango</p>
+
+									</div>
+								</div>
+								<div class="form-row">
+
+									<div class="form-holder form-holder-1"   >
+
+										{%for i in NameM %}
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+										{%for i in PriceM %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+									</div>
+									<div class="form-holder form-holder-1">
+
+									{%for i in DataM %}
+
+										<h6  style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+										{%for j in CallM %}
+
+										<h6  style="height:25px">{{j}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+									{%for k in SmsM %}
+										<h6 style="height:25px">{{k}}</h6 >
+										 {%endfor%}
+
+
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+										{%for l in DayM %}
+
+										<h6 style="height:25px">{{l}}</h6 >
+										 {%endfor%}
+
+
+									</div>
+								</div>
+
+
+								<div class="form-row">
+									<div class="form-holder form-holder-1">
+
+										<p>Chez Hemle</p>
+
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-1">
+
+											{%for i in NameH %}
+										<h6 style="height:25px"  >{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+											{%for i in PriceH %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+										{%for i in DataH %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+											{%for i in CallH %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+
+										{%for i in SmsH %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+
+									</div>
+									<div class="form-holder form-holder-1">
+										{%for i in DayH %}
+
+										<h6 style="height:25px">{{i}}</h6 >
+										 {%endfor%}
+									
+									</div>
+								</div>
+								
+								<!-- <div class="form-row-total">
+									<div class="form-row">
+				                		<div class="form-holder form-holder-2 form-holder-3">
+											
+				                			
+				                			<label class="bank-images label-above bank-1-label" for="bank-1">
+				                				<h2>Mango</h2>
+				                			</label>
+											<label class="bank-images label-above bank-1-label" for="bank-1">
+				                				<h2>Mango</h2>
+				                			</label>
+											
+											<label class="bank-images label-above bank-2-label" for="bank-2">
+												<img src="images/form-v1-2.png" alt="bank-2">
+											</label>
+											<input type="radio" class="radio" name="bank-3" id="bank-3" value="bank-3">
+											<label class="bank-images label-above bank-3-label" for="bank-3">
+												<img src="images/form-v1-3.png" alt="bank-3">
+											</label>
+				                		</div>
+				                	</div>
+				                	<div class="form-row">
+				                		<div class="form-holder form-holder-2 form-holder-3">
+				                		<h2>forfait mango S</h2>
+				                		</div>
+				                	</div>
+								</div> -->
+							</div>
+			            </section>
+			           
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+		<script src="{% static 'deals/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'deals/js/jquery.steps.js' %}"></script>
+	<script src="{% static 'deals/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
